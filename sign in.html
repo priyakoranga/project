@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        margin-top: 25vh;
+      }
+      .container {
+        border: 2px solid black;
+        border-radius: 34px;
+        display: inline-block;
+        padding: 23px;
+        align-items: center;
+        text-align: center;
+      }
+      form {
+        font-size: large;
+        font-weight: 900;
+      }
+
+      .inputs {
+        padding: 15px;
+      }
+      .btn input {
+        margin-top: 23px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="sign_in.php" method="post">
+        <h1 class="header">sign in</h1>
+        <div id="name" class="inputs">
+          <label for="">username:</label>
+          <input type="text" name="name" value="" /><br />
+        </div>
+        <div id="pass" class="inputs">
+          <label for="">password:</label>
+          <input type="text" name="password" /><br />
+        </div>
+        <div id="email" class="inputs">
+          <label for="">email:</label>
+          <input type="text" name="email" value="" /><br />
+        </div>
+        <div class="btn">
+          <input type="submit" name="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
